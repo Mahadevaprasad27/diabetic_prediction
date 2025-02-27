@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+
+        <!-- Display Result Message -->
+        <div class="result">{{ message }}</div>
+
+        <!-- Back to Form Button -->
+        <a href="/" class="back-button">Check Another Prediction</a>
+    </div>
+</body>
+
+</html>

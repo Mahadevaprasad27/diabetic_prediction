@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Diabetes Prediction Form</h2>
+
+        <!-- Prediction Form -->
+        <form action="/" method="post">
+            <div class="input-group">
+                <label for="pregnancies">Pregnancies:</label>
+                <input type="number" id="pregnancies" name="pregnancies" required>
+            </div>
+
+            <div class="input-group">
+                <label for="glucose">Glucose Level:</label>
+                <input type="number" id="glucose" name="glucose" required>
+            </div>
+
+            <div class="input-group">
+                <label for="bloodpressure">Blood Pressure:</label>
+                <input type="number" id="bloodpressure" name="bloodpressure" required>
+            </div>
+
+            <div class="input-group">
+                <label for="skinthickness">Skin Thickness:</label>
+                <input type="number" id="skinthickness" name="skinthickness" required>
+            </div>
+
+            <div class="input-group">
+                <label for="insulin">Insulin Level:</label>
+                <input type="number" id="insulin" name="insulin" required>
+            </div>
+
+            <div class="input-group">
+                <label for="bmi">BMI (Body Mass Index):</label>
+                <input type="number" step="0.01" id="bmi" name="bmi" required>
+            </div>
+
+            <div class="input-group">
+                <label for="dpf">Diabetes Pedigree Function:</label>
+                <input type="number" step="0.01" id="dpf" name="dpf" required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <button type="submit">Predict Diabetes Risk</button>
+        </form>
+    </div>
+</body>
+
+</html>
